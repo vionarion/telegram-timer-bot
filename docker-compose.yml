@@ -1,0 +1,17 @@
+services:
+  timerbot:
+    build: .
+    env_file: .env
+    volumes:
+      - data:/data
+    ports:
+      # metrics and health for local Prometheus; not exposed to the internet
+      - "127.0.0.1:8080:8080"
+    restart: unless-stopped
+    mem_limit: 64m
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  data:
