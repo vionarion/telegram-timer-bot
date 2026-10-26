@@ -1,3 +1,5 @@
+![telegram-timer-bot](assets/banner.svg)
+
 # telegram-timer-bot
 
 ![ci](https://github.com/vionarion/telegram-timer-bot/actions/workflows/ci.yml/badge.svg)
