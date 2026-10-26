@@ -1,5 +1,8 @@
 # telegram-timer-bot
 
+![ci](https://github.com/vionarion/telegram-timer-bot/actions/workflows/ci.yml/badge.svg)
+![license](https://img.shields.io/github/license/vionarion/telegram-timer-bot)
+
 Telegram bot for countdown timers, written in Go. Timers are stored in SQLite and survive restarts:
 if the bot was down when a timer was due, it fires right after the start with a "late by N min" note.
 
